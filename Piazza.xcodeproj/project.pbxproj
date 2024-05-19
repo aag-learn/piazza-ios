@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC60ED302BF9F53A00FCB9AC /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED2F2BF9F53A00FCB9AC /* Api.swift */; };
+		AC60ED322BF9F61F00FCB9AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED312BF9F61F00FCB9AC /* RootViewController.swift */; };
+		AC60ED352BF9F82900FCB9AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC60ED332BF9F82900FCB9AC /* Localizable.strings */; };
+		AC60ED372BF9F8FA00FCB9AC /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED362BF9F8FA00FCB9AC /* BaseNavigationController.swift */; };
+		AC60ED392BF9F91D00FCB9AC /* RoutingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED382BF9F91D00FCB9AC /* RoutingController.swift */; };
+		AC60ED3B2BF9F99500FCB9AC /* path_configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = AC60ED3A2BF9F99500FCB9AC /* path_configuration.json */; };
+		AC60ED3D2BF9F9C300FCB9AC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED3C2BF9F9C300FCB9AC /* Global.swift */; };
+		AC60ED402BF9FCA600FCB9AC /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = AC60ED3F2BF9FCA600FCB9AC /* Turbo */; };
+		AC60ED422BF9FCAB00FCB9AC /* Strada in Frameworks */ = {isa = PBXBuildFile; productRef = AC60ED412BF9FCAB00FCB9AC /* Strada */; };
+		AC60ED442BF9FE0700FCB9AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED432BF9FE0700FCB9AC /* WebViewController.swift */; };
+		AC60ED462BF9FE5800FCB9AC /* ViewControllerVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED452BF9FE5800FCB9AC /* ViewControllerVendor.swift */; };
+		AC60ED482BFA14E500FCB9AC /* PathDirectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED472BFA14E500FCB9AC /* PathDirectable.swift */; };
 		ACFA1D082BF9F05E00D64A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA1D072BF9F05E00D64A95 /* AppDelegate.swift */; };
 		ACFA1D0A2BF9F05E00D64A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA1D092BF9F05E00D64A95 /* SceneDelegate.swift */; };
 		ACFA1D112BF9F06000D64A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA1D102BF9F06000D64A95 /* Assets.xcassets */; };
@@ -34,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC60ED2F2BF9F53A00FCB9AC /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		AC60ED312BF9F61F00FCB9AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		AC60ED342BF9F82900FCB9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC60ED362BF9F8FA00FCB9AC /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		AC60ED382BF9F91D00FCB9AC /* RoutingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingController.swift; sourceTree = "<group>"; };
+		AC60ED3A2BF9F99500FCB9AC /* path_configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = path_configuration.json; sourceTree = "<group>"; };
+		AC60ED3C2BF9F9C300FCB9AC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		AC60ED432BF9FE0700FCB9AC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AC60ED452BF9FE5800FCB9AC /* ViewControllerVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVendor.swift; sourceTree = "<group>"; };
+		AC60ED472BFA14E500FCB9AC /* PathDirectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathDirectable.swift; sourceTree = "<group>"; };
 		ACFA1D042BF9F05E00D64A95 /* Piazza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piazza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA1D072BF9F05E00D64A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFA1D092BF9F05E00D64A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC60ED402BF9FCA600FCB9AC /* Turbo in Frameworks */,
+				AC60ED422BF9FCAB00FCB9AC /* Strada in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +96,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC60ED3E2BF9FCA600FCB9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACFA1CFB2BF9F05E00D64A95 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +110,7 @@
 				ACFA1D1D2BF9F06000D64A95 /* PiazzaTests */,
 				ACFA1D272BF9F06000D64A95 /* PiazzaUITests */,
 				ACFA1D052BF9F05E00D64A95 /* Products */,
+				AC60ED3E2BF9FCA600FCB9AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +128,17 @@
 			isa = PBXGroup;
 			children = (
 				ACFA1D072BF9F05E00D64A95 /* AppDelegate.swift */,
+				AC60ED472BFA14E500FCB9AC /* PathDirectable.swift */,
+				AC60ED362BF9F8FA00FCB9AC /* BaseNavigationController.swift */,
+				AC60ED432BF9FE0700FCB9AC /* WebViewController.swift */,
+				AC60ED452BF9FE5800FCB9AC /* ViewControllerVendor.swift */,
+				AC60ED382BF9F91D00FCB9AC /* RoutingController.swift */,
+				AC60ED3A2BF9F99500FCB9AC /* path_configuration.json */,
+				AC60ED3C2BF9F9C300FCB9AC /* Global.swift */,
+				AC60ED2F2BF9F53A00FCB9AC /* Api.swift */,
+				AC60ED312BF9F61F00FCB9AC /* RootViewController.swift */,
 				ACFA1D092BF9F05E00D64A95 /* SceneDelegate.swift */,
+				AC60ED332BF9F82900FCB9AC /* Localizable.strings */,
 				ACFA1D102BF9F06000D64A95 /* Assets.xcassets */,
 				ACFA1D122BF9F06000D64A95 /* LaunchScreen.storyboard */,
 				ACFA1D152BF9F06000D64A95 /* Info.plist */,
@@ -138,6 +180,10 @@
 			dependencies = (
 			);
 			name = Piazza;
+			packageProductDependencies = (
+				AC60ED3F2BF9FCA600FCB9AC /* Turbo */,
+				AC60ED412BF9FCAB00FCB9AC /* Strada */,
+			);
 			productName = Piazza;
 			productReference = ACFA1D042BF9F05E00D64A95 /* Piazza.app */;
 			productType = "com.apple.product-type.application";
@@ -231,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFA1D112BF9F06000D64A95 /* Assets.xcassets in Resources */,
+				AC60ED352BF9F82900FCB9AC /* Localizable.strings in Resources */,
 				ACFA1D142BF9F06000D64A95 /* Base in Resources */,
+				AC60ED3B2BF9F99500FCB9AC /* path_configuration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC60ED302BF9F53A00FCB9AC /* Api.swift in Sources */,
 				ACFA1D082BF9F05E00D64A95 /* AppDelegate.swift in Sources */,
+				AC60ED462BF9FE5800FCB9AC /* ViewControllerVendor.swift in Sources */,
+				AC60ED392BF9F91D00FCB9AC /* RoutingController.swift in Sources */,
+				AC60ED322BF9F61F00FCB9AC /* RootViewController.swift in Sources */,
+				AC60ED482BFA14E500FCB9AC /* PathDirectable.swift in Sources */,
+				AC60ED372BF9F8FA00FCB9AC /* BaseNavigationController.swift in Sources */,
 				ACFA1D0A2BF9F05E00D64A95 /* SceneDelegate.swift in Sources */,
+				AC60ED3D2BF9F9C300FCB9AC /* Global.swift in Sources */,
+				AC60ED442BF9FE0700FCB9AC /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +370,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AC60ED332BF9F82900FCB9AC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC60ED342BF9F82900FCB9AC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		ACFA1D122BF9F06000D64A95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -629,6 +693,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC60ED3F2BF9FCA600FCB9AC /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC60ED2C2BF9F10400FCB9AC /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+		AC60ED412BF9FCAB00FCB9AC /* Strada */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC60ED2D2BF9F1C000FCB9AC /* XCRemoteSwiftPackageReference "strada-ios" */;
+			productName = Strada;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACFA1CFC2BF9F05E00D64A95 /* Project object */;
 }
