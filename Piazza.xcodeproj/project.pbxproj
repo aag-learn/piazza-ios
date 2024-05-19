@@ -137,6 +137,7 @@
 				ACFA1D002BF9F05E00D64A95 /* Sources */,
 				ACFA1D012BF9F05E00D64A95 /* Frameworks */,
 				ACFA1D022BF9F05E00D64A95 /* Resources */,
+				AC60ED2E2BF9F1DB00FCB9AC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -217,6 +218,7 @@
 			mainGroup = ACFA1CFB2BF9F05E00D64A95;
 			packageReferences = (
 				AC60ED2C2BF9F10400FCB9AC /* XCRemoteSwiftPackageReference "turbo-ios" */,
+				AC60ED2D2BF9F1C000FCB9AC /* XCRemoteSwiftPackageReference "strada-ios" */,
 			);
 			productRefGroup = ACFA1D052BF9F05E00D64A95 /* Products */;
 			projectDirPath = "";
@@ -255,6 +257,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC60ED2E2BF9F1DB00FCB9AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFO_PLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nPLISTBUDDY=\"/usr/libexec/PlistBuddy\"\n\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    $PLISTBUDDY -c \"Add :NSAppTransportSecurity dict\" \"${INFO_PLIST}\" || true\n    $PLISTBUDDY -c \"Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true\" \"${INFO_PLIST}\" || true\n    $PLISTBUDDY -c \"Set :NSAppTransportSecurity:NSAllowsArbitraryLoads true\" \"${INFO_PLIST}\"\nelse\n    $PLISTBUDDY -c \"Delete :NSAppTransportSecurity:NSAllowsArbitraryLoads\" \"${INFO_PLIST}\" || true\nfi\n\nALLOWS_ARBITRARY_LOADS_ENABLED=$($PLISTBUDDY -c \"Print :NSAppTransportSecurity:NSAllowsArbitraryLoads\" \"${INFO_PLIST}\")\nif [ \"${ALLOWS_ARBITRARY_LOADS_ENABLED}\" == \"true\" ]; then\n  echo \"warning: ATS is disabled. :NSAppTransportSecurity:NSAllowsArbitraryLoads set to true. This is insecure and should not be used in release builds.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACFA1D002BF9F05E00D64A95 /* Sources */ = {
@@ -612,6 +634,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 7.1.0;
+			};
+		};
+		AC60ED2D2BF9F1C000FCB9AC /* XCRemoteSwiftPackageReference "strada-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/strada-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "1.0.0-beta2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
