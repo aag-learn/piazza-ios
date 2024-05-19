@@ -215,6 +215,9 @@
 				Base,
 			);
 			mainGroup = ACFA1CFB2BF9F05E00D64A95;
+			packageReferences = (
+				AC60ED2C2BF9F10400FCB9AC /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = ACFA1D052BF9F05E00D64A95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -601,6 +604,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC60ED2C2BF9F10400FCB9AC /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = ACFA1CFC2BF9F05E00D64A95 /* Project object */;
 }
