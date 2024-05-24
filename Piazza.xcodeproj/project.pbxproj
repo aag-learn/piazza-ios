@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC34F1172C0106A00004BD72 /* BridgeComponen+Piazza.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F1162C0106A00004BD72 /* BridgeComponen+Piazza.swift */; };
+		AC34F1192C0106D90004BD72 /* NavMenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F1182C0106D90004BD72 /* NavMenuComponent.swift */; };
 		AC60ED302BF9F53A00FCB9AC /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED2F2BF9F53A00FCB9AC /* Api.swift */; };
 		AC60ED322BF9F61F00FCB9AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60ED312BF9F61F00FCB9AC /* RootViewController.swift */; };
 		AC60ED352BF9F82900FCB9AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC60ED332BF9F82900FCB9AC /* Localizable.strings */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC34F1162C0106A00004BD72 /* BridgeComponen+Piazza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BridgeComponen+Piazza.swift"; sourceTree = "<group>"; };
+		AC34F1182C0106D90004BD72 /* NavMenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuComponent.swift; sourceTree = "<group>"; };
 		AC60ED2F2BF9F53A00FCB9AC /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		AC60ED312BF9F61F00FCB9AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		AC60ED342BF9F82900FCB9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				ACFA1D102BF9F06000D64A95 /* Assets.xcassets */,
 				ACFA1D122BF9F06000D64A95 /* LaunchScreen.storyboard */,
 				ACFA1D152BF9F06000D64A95 /* Info.plist */,
+				AC34F1162C0106A00004BD72 /* BridgeComponen+Piazza.swift */,
+				AC34F1182C0106D90004BD72 /* NavMenuComponent.swift */,
 			);
 			path = Piazza;
 			sourceTree = "<group>";
@@ -330,9 +336,11 @@
 				AC60ED392BF9F91D00FCB9AC /* RoutingController.swift in Sources */,
 				AC60ED322BF9F61F00FCB9AC /* RootViewController.swift in Sources */,
 				AC60ED482BFA14E500FCB9AC /* PathDirectable.swift in Sources */,
+				AC34F1172C0106A00004BD72 /* BridgeComponen+Piazza.swift in Sources */,
 				AC60ED372BF9F8FA00FCB9AC /* BaseNavigationController.swift in Sources */,
 				ACFA1D0A2BF9F05E00D64A95 /* SceneDelegate.swift in Sources */,
 				AC60ED3D2BF9F9C300FCB9AC /* Global.swift in Sources */,
+				AC34F1192C0106D90004BD72 /* NavMenuComponent.swift in Sources */,
 				AC60ED442BF9FE0700FCB9AC /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
