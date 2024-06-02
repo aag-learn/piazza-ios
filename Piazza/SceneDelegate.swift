@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Turbo
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,8 +23,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = RootViewController()
         self.window = window
         window.makeKeyAndVisible()
+
+        if let url = connectionOptions.userActivities.first?.webpageURL {
+          proposeVisitTo(url)
+        }
     }
 
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        if let url = userActivity.webpageURL {
+          proposeVisitTo(url)
+        }
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
@@ -52,6 +63,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    private func proposeVisitTo(_ url: URL) {
+      DispatchQueue.main.async {
+        let rootViewController = self.window?.rootViewController as! RootViewController
+        let routingController = rootViewController.selectedViewController as! RoutingController
+
+        let properties = Global.pathConfiguration.properties(for: url)
+
+        routingController.session( routingController.session, didProposeVisit: VisitProposal(url: url, options: VisitOptions(), properties: properties) )
+      }
+    }
 
 }
 
