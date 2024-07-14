@@ -4,7 +4,7 @@ import SafariServices
 import WebKit
 import Strada
 
-class RoutingController: BaseNavigationController, PathDirectable {
+class RoutingController: BaseNavigationController, PathDirectable, WKNavigationDelegate {
 
     private enum PresentationType: String {
       case advance, replace, modal
@@ -171,4 +171,43 @@ extension RoutingController: SessionDelegate {
         }
       }
     }
+    func sessionDidLoadWebView(_ session: Session) {
+      session.webView.navigationDelegate = self
+      session.webView.uiDelegate = self
+      //session.webView.attachWebBridge()
+    }
+}
+
+extension RoutingController: WKUIDelegate {
+  func webView(_ webView: WKWebView,
+               runJavaScriptConfirmPanelWithMessage message: String,
+               initiatedByFrame frame: WKFrameInfo,
+               completionHandler: @escaping (Bool) -> Void) {
+
+    let alert = UIAlertController(
+      title: NSLocalizedString("confirm.title", comment: ""),
+      message: message,
+      preferredStyle: .alert
+    )
+
+    let okAction = UIAlertAction(
+      title: NSLocalizedString("confirm.ok", comment: ""),
+      style: .default,
+      handler: { _ in
+        completionHandler(true)
+      }
+    )
+    alert.addAction(okAction)
+
+    let cancelAction = UIAlertAction(
+      title: NSLocalizedString("confirm.cancel", comment: ""),
+      style: .cancel,
+      handler: { _ in
+        completionHandler(false)
+      }
+    )
+    alert.addAction(cancelAction)
+
+    present(alert, animated: true, completion: nil)
+  }
 }

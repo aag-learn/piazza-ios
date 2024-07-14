@@ -5,4 +5,6 @@
 "tab.profile" = "Profile";
 "error.title" = "Whoops, Something went wrong!";
 "error.ok" = "Ok";
-
+"confirm.title" = "Are you sure?";
+"confirm.ok" = "Ok";
+"confirm.cancel" = "Cancel";

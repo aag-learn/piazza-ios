@@ -14,6 +14,8 @@ struct Api {
     static let rootURL = URL(string: "https://piazza-web-tavf.onrender.com")!
 #endif
     struct Path {
-        static let login = Api.rootURL.appendingPathComponent("login")
-        static let profile = Api.rootURL.appendingPathComponent("profile")    }
+        static let login   = Api.rootURL.appendingPathComponent("login")
+        static let profile = Api.rootURL.appendingPathComponent("profile")
+        static let myAds   = Api.rootURL.appendingPathComponent("my_listings")
+    }
 }

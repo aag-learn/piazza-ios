@@ -4,7 +4,9 @@
       "patterns": [
         "/login",
         "/sign_up",
-        "/users/password_resets/"
+        "/users/password_resets/",
+        "/new$",
+        "/edit$"
       ],
       "properties": {
         "presentation": "modal"
@@ -13,6 +15,7 @@
     {
       "patterns": [
         "/$",
+        "/my_listings$",
         "/profile$"
       ],
       "properties": {
